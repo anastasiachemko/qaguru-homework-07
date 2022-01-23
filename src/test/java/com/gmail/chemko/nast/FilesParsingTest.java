@@ -20,7 +20,7 @@ public class FilesParsingTest {
 
     @Test
     void zipTest() throws Exception {
-        ZipFile zipFile = new ZipFile(new File(cl.getResource("files/archive.zip").toURI()));
+        ZipFile zipFile = new ZipFile(new File(cl.getResource("archive.zip").toURI()));
 
         //Проверяем XLSX файл в архиве
         ZipEntry xlsxFile = zipFile.getEntry("sample-xlsx-file.xlsx");
