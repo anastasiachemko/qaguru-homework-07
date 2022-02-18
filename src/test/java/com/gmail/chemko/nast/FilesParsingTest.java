@@ -31,6 +31,7 @@ public class FilesParsingTest {
         }
 
         //Проверяем PDF файл в архиве
+        //PROCEDURE OF ETYMOLOGICAL ANALYSIS
         ZipEntry pdfFile = zipFile.getEntry("sample-pdf-file.pdf");
         try (InputStream pdfStream = zipFile.getInputStream(pdfFile)) {
             PDF parsedPDF = new PDF(pdfStream);
