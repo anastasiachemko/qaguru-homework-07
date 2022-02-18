@@ -18,6 +18,7 @@ public class FilesParsingTest {
 
     private ClassLoader cl = FilesParsingTest.class.getClassLoader();
 
+    // комментарий для pull request
     @Test
     void zipTest() throws Exception {
         ZipFile zipFile = new ZipFile(new File(cl.getResource("archive.zip").toURI()));
